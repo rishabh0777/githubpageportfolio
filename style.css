@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+html, body{
+    height:100%;
+    width:100%;
+    color:#fff;
+}
+#main{
+    height:100vh;
+    width:100vw;
+    padding:3vh 3vw 3vh 3vw;
+    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=010328&c2=000000&gt=l&gd=dcr
+*/
+background: #010328;
+background: linear-gradient(270deg, #010328, #000000);
+}
+i{
+    color:#e3e4f2;
+    font-size:2rem;
+    /* background-color:#000; */
+    overflow:hidden;
+}
+#hero-profile{
+    height: 55%;
+    width: 100%;
+    /* background: #000; */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#hero-profile p a{
+    font-size: 1.8vw;
+    color:#6143da;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    transition: all ease 0.3s;
+}
+#hero-profile p a:hover{
+    color: #6143da;
+}
+#hero-profile h2{
+    font-size: 2.8vw;
+    color:#e3e4f2;
+}
+#theme{
+    align-self: flex-end;
+    /* color:#000; */
+    width:2rem;
+    height:2rem;
+    position:absolute;
+    top:2vw;
+    font-size: 2vw;
+}
+#pic{
+    width:13rem;
+    height:13rem;
+    border:0.1em solid #4b4a4d;
+    /* box-shadow: 5px 5px 5px 10px #fff; */
+    border-radius: 50%;
+    /* background-color: #fff; */
+}
+#pic img{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+}
+#hero-det{
+    height:45%;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info{
+    height: 25%;
+    width:20%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.info h3{
+    font-size: 2.3vw;
+    color: #a7a8b7;
+}
+.info p{
+    font-size: 1.9vw;
+    color:#6143da;
+    font-weight: 500;
+}
+
+
+@media(max-width:650px){
+    #hero-profile h2{
+        font-size:7vw;
+    }
+    #hero-profile p a{
+        font-size:5vw;
+    }
+    #hero-det{
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        height:40%;
+        /* background: #000; */
+        align-items: space-between;
+    }
+    .info{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* padding: 5rem; */
+        /* background: #fff; */
+        width:100vw;
+        height:100%;
+    }
+    .info h3{
+        font-size: 3vw;
+    }
+    .info p{
+        font-size: 3vw;
+    }
+}
